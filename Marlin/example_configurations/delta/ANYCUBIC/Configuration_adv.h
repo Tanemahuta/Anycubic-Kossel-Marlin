@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Marlin 3D Printer Firmware
  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
@@ -182,7 +182,7 @@
  *
  * The fan will turn on automatically whenever any stepper is enabled
  * and turn off after a set period after all steppers are turned off.
- * 
+ *
  * To enable just uncomment the next line, all the TRIGORILLA board pins
  * definitions are all ready done
  */
@@ -563,7 +563,7 @@
 
   // Show a progress bar on HD44780 LCDs for SD printing
   #if ENABLED(FULL_GRAPHIC_CONTROLLER)
-    //#define LCD_PROGRESS_BAR
+  //#define LCD_PROGRESS_BAR
   #else
     #define LCD_PROGRESS_BAR
   #endif
