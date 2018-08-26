@@ -68,7 +68,7 @@
  * I recommend to get them from autocalibration
  * NEEDS EEPROM CLEAR!!
 */
-#define DELTA_HEIGHT 240
+#define DELTA_HEIGHT 289.90
 
 /* Steppers Direction
  * Uncomment if your stepper move backwards
@@ -110,9 +110,9 @@
  * on the info screen of the printer.
  * NEEDS EEPROM CLEAR!!
 */
-#define ZPROBE_X_OFFSET        34
-#define ZPROBE_Y_OFFSET        19
-#define ZPROBE_Z_OFFSET        -0.2
+#define ZPROBE_X_OFFSET        -43
+#define ZPROBE_Y_OFFSET        -17
+#define ZPROBE_Z_OFFSET        -0.35
 
 /* Bed Leveling Type
  * Type of bed leveling you want to use.
@@ -120,8 +120,8 @@
  * or not use one at all.
 */
 //#define AUTO_BED_LEVELING_LINEAR
-//#define AUTO_BED_LEVELING_BILINEAR
-#define AUTO_BED_LEVELING_UBL
+#define AUTO_BED_LEVELING_BILINEAR
+//#define AUTO_BED_LEVELING_UBL
 
 /* Autolevel / Autocalibration Grid Points
  * Number of points to probe on autolevel / autocalibration routines
@@ -140,7 +140,7 @@
  * Start with a high value, and reduce according to your setup
  * NEEDS EEPROM CLEAR!!
 */
-#define BED_MARGIN 39
+#define BED_MARGIN 48
 
 /* Extruder Count
  * If your using 2 Extruders, uncomment this line
@@ -259,7 +259,7 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_CONFIG_H_AUTHOR "Emilio1625" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "Tanemahuta" // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
 #define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
@@ -693,9 +693,10 @@
 #define DELTA_CALIBRATION_DEFAULT_POINTS GRID_POINTS
 
 // Enable and set these values based on results of 'G33 A'
-//#define H_FACTOR +1.16
-//#define R_FACTOR 3.60
-//#define A_FACTOR 0.98
+
+#define H_FACTOR +1.21
+#define R_FACTOR +5.27
+#define A_FACTOR +1.20
 
 #endif
 
@@ -729,7 +730,7 @@
 
 // Horizontal distance bridged by diagonal push rods when effector is centered.
 #if ENABLED(LINEAR_PLUS)
-    #define DELTA_RADIUS 134.34 //mm  Get this value from auto calibrate
+    #define DELTA_RADIUS 134.73 //mm  Get this value from auto calibrate
 #else
 #define DELTA_RADIUS 101.31 //mm  Get this value from auto calibrate
 #endif
@@ -1252,7 +1253,7 @@
 */
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-//#define AUTO_BED_LEVELING_BILINEAR
+// #define AUTO_BED_LEVELING_BILINEAR
 //#define AUTO_BED_LEVELING_UBL
 //#define MESH_BED_LEVELING
 
