@@ -32,7 +32,7 @@
  */
 #ifndef CONFIGURATION_ADV_H
 #define CONFIGURATION_ADV_H
-#define CONFIGURATION_ADV_H_VERSION 010107
+#define CONFIGURATION_ADV_H_VERSION 010109
 
 // @section temperature
 
@@ -899,13 +899,13 @@
   #define FILAMENT_CHANGE_LOAD_LENGTH 550     // Load filament length over hotend in mm
                                               // Longer length for bowden printers to fast load filament into whole bowden tube over the hotend,
                                               // Short or zero length for printers without bowden where loading is not used
-  #define ADVANCED_PAUSE_EXTRUDE_FEEDRATE 10  // Extrude filament feedrate in mm/s - must be slower than load feedrate
-  #define ADVANCED_PAUSE_EXTRUDE_LENGTH 10    // Extrude filament length in mm after filament is loaded over the hotend,
+  #define ADVANCED_PAUSE_PURGE_FEEDRATE 10  // Extrude filament feedrate in mm/s - must be slower than load feedrate
+  #define ADVANCED_PAUSE_PURGE_LENGTH 10    // Extrude filament length in mm after filament is loaded over the hotend,
                                               // 0 to disable for manual extrusion
                                               // Filament can be extruded repeatedly from the filament exchange menu to fill the hotend,
                                               // or until outcoming filament color is not clear for filament color change
   #define PAUSE_PARK_NOZZLE_TIMEOUT 240       // Turn off nozzle if user doesn't change filament within this time limit in seconds
-  #define FILAMENT_CHANGE_NUMBER_OF_ALERT_BEEPS 5 // Number of alert beeps before printer goes quiet
+  #define FILAMENT_CHANGE_ALERT_BEEPS 5       // Number of alert beeps before printer goes quiet
   #define PAUSE_PARK_NO_STEPPER_TIMEOUT       // Enable to have stepper motors hold position during filament change
                                               // even if it takes longer than DEFAULT_STEPPER_DEACTIVE_TIME.
   #define PARK_HEAD_ON_PAUSE                // Go to filament change position on pause, return to print position on resume
